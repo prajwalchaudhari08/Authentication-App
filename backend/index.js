@@ -27,7 +27,7 @@ app.use(express.json()); // Parses incoming JSON request bodies
  * - `allowedHeaders`, defines what headers the frontend can send.
  */
 const corsOptions = {
-  // origin: "*", // Change this to the frontend URL in production (e.g., "https://your-frontend.com")
+  origin: "*", // Change this to the frontend URL in production (e.g., "https://your-frontend.com")
   methods: "GET, POST, PUT, DELETE, OPTIONS", // Allowed request types
   allowedHeaders: "Content-Type, Authorization", // Allowed headers in requests
 };
